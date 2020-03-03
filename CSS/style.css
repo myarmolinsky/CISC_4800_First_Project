@@ -156,8 +156,3 @@ input::-webkit-outer-spin-button {
   font-size: 1.5em;
   font-weight: bold;
 }
-
-#map {
-  height: 400px;
-  width: 100%;
-}

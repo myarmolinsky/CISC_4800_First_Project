@@ -132,28 +132,3 @@ function checkRating() {
     "rater"
   ).value;
 }
-
-function getCoords() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition);
-  } else {
-    document.getElementById("coords").innerHTML =
-      "No geological coordinates available";
-  }
-}
-
-function showPosition(position) {
-  document.getElementById("coords").innerHTML =
-    "Latitude: " +
-    position.coords.latitude +
-    ", Longitude: " +
-    position.coords.longitude;
-}
-
-function initMap() {
-  var mapProp = {
-    center: new google.maps.LatLng(34.9686444587, 135.7537),
-    zoom: 5
-  };
-  var map = new google.maps.Map(document.getElementById("map"), mapProp);
-}
