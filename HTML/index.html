@@ -1,11 +1,104 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>CISC 4800 First Project</title>
-    <link rel="stylesheet" href="../CSS/style.css" />
-  </head>
-  <body>
-    <h1>First Project</h1>
+  <title>Pokemon Fansite Homepage</title>
+  <link rel="stylesheet" href="../CSS/style.css" />
+  <body onload="activateTheme()">
+    <div class="homepageHeading">
+      WELCOME TO THE UNOFFICIAL POKEMON FANSITE!
+    </div>
+    <div class="homepageSubheading">
+      Your guide to the fantastical world of Pokemon!
+    </div>
+    <div id="theme">
+      You are currently using light theme, click the button below to switch to
+      dark theme
+    </div>
+    <br />
+    <button onclick="toggleTheme()">Toggle Theme</button>
+    <h3>Here is a video describing Pokemon:</h3>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/XDzdFR3MDWo"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
+    <h2>Basic Information about Pokemon</h2>
+    <div>
+      Pokemon is a franchise built around the capturing, training, and battling
+      of creatures called Pokemon (short for Pocket Monsters). At the moment,
+      there are more than 896 Pokemon, with even more being added soon. Pokemon
+      can be found all over the world in the wilderness of Regions. Below you
+      will find a slideshow of all the region maps.
+      <div class="slideshow">
+        <div class="slide fade">
+          <img style="width:100%" src="../Resources/Kanto.png" />
+          <div class="caption">Kanto</div>
+        </div>
+        <div class="slide fade">
+          <img style="width:100%" src="../Resources/Johto.png" />
+          <div class="caption">Johto</div>
+        </div>
+        <div class="slide fade">
+          <img style="width:100%" src="../Resources/Hoenn.jpg" />
+          <div class="caption">Hoenn</div>
+        </div>
+        <div class="slide fade">
+          <img style="width:100%" src="../Resources/Sinnoh.jpg" />
+          <div class="caption">Sinnoh</div>
+        </div>
+        <div class="slide fade">
+          <img style="width:100%" src="../Resources/Unova.jpg" />
+          <div class="caption">Unova</div>
+        </div>
+        <div class="slide fade">
+          <img style="width:100%" src="../Resources/Kalos.jpg" />
+          <div class="caption">Kalos</div>
+        </div>
+        <div class="slide fade">
+          <img style="width:100%" src="../Resources/Alola.jpg" />
+          <div class="caption">Alola</div>
+        </div>
+        <div class="slide fade">
+          <img style="width:100%" src="../Resources/Galar.jpg" />
+          <div class="caption">Galar</div>
+        </div>
+        <a class="prev" onclick="shiftSlide(-1)">&#10094;</a>
+        <a class="next" onclick="shiftSlide(1)">&#10095;</a>
+      </div>
+      <div style="text-align:center">
+        <span class="dot" onclick="changeSlide(1)"></span>
+        <span class="dot" onclick="changeSlide(2)"></span>
+        <span class="dot" onclick="changeSlide(3)"></span>
+        <span class="dot" onclick="changeSlide(4)"></span>
+        <span class="dot" onclick="changeSlide(5)"></span>
+        <span class="dot" onclick="changeSlide(6)"></span>
+        <span class="dot" onclick="changeSlide(7)"></span>
+        <span class="dot" onclick="changeSlide(8)"></span>
+      </div>
+      In the links provided below, you will find that you will have access to
+      all the information you can possible want to have about the Pokemon
+      universe.
+    </div>
+    <h2>Wiki Links:</h2>
+    <ul>
+      <li>
+        <a href="https://www.smogon.com/" target="_blank">Smogon University</a>
+      </li>
+      <li><a href="https://serebii.net/" target="_blank">Serebii</a></li>
+      <li>
+        <a
+          href="https://bulbapedia.bulbagarden.net/wiki/Main_Page"
+          target="_blank"
+          >Bulbapedia</a
+        >
+      </li>
+    </ul>
+    <h2>Site Links:</h2>
+    <ul>
+      <li><a href="./locations.html">Compare Geological Locations</a></li>
+      <li><a href="./interactive.html">Tell us about yourself!</a></li>
+    </ul>
 
     <script src="../JavaScript/script.js"></script>
   </body>

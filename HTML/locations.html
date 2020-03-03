@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <title>Compare Locations</title>
+  <link rel="stylesheet" href="../CSS/style.css" />
+  <body onload="activateTheme(); getCoords()">
+    <a href="./index.html">Go back to homepage</a><br /><br />
+    <div id="theme">
+      You are currently using light theme, click the button below to switch to
+      dark theme
+    </div>
+    <br />
+    <button onclick="toggleTheme()">Toggle Theme</button>
+    <h3>
+      Here is where the Nintendo (the company developing Pokemon) headquarters
+      are:
+    </h3>
+    <div id="map"></div>
+    <h3>Here are the geological coordinates of Nintendo headquarters:</h3>
+    <div>Latitude: 34.9686444587, Longitude: 135.7537</div>
+    <h3>And here are your geological coordinates:</h3>
+    <div id="coords"></div>
+    <script src="../JavaScript/script.js"></script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByHN4sWvFDLkyNACsU4Sm-nH-t_PJJ5Rc&callback=initMap"
+      type="text/javascript"
+    ></script>
+  </body>
+</html>
